@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ucd.android.qwikscan">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/trolley"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait">
+        <activity android:name=".screens.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".screens.Profile"
+            android:parentActivityName=".screens.Login"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".screens.Login"
+                />
+        </activity>
+        <activity android:name=".screens.Scan"
+            android:parentActivityName=".screens.Profile"
+            />
+        <activity android:name=".screens.Payment"
+            android:parentActivityName=".screens.Scan"
+            android:launchMode="singleTop"/>
+        <activity android:name=".screens.Confirmation"
+            android:parentActivityName=".screens.Login"
+            android:launchMode="singleTop"/>
+        <activity android:name=".paymentMethods.AndroidPay"
+            android:parentActivityName=".screens.Scan"
+            android:launchMode="singleTop"/>
+        <activity android:name=".paymentMethods.CashQRCode"
+            android:parentActivityName=".screens.Scan"
+            android:launchMode="singleTop"/>
+        <activity android:name=".paymentMethods.PayPal"
+            android:parentActivityName=".screens.Scan"
+            android:launchMode="singleTop"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBZlZaNQsoeWcwVnYfImRmyz4C4crsOxUs" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

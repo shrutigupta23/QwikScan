@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="paypal_request_code">1</integer>
+    <integer name="qr_request_code">2</integer>
+    <integer name="androidpay_request_code">3</integer>
+
+</resources>

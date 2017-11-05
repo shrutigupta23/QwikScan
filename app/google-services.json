@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "800031691648",
+    "project_id": "qwikscan-e735d"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800031691648:android:b12103ca384bd1be",
+        "android_client_info": {
+          "package_name": "com.ucd.android.qwikscan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800031691648-idri6jsjs024u81d6o1u5ivda9joivk2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ucd.android.qwikscan",
+            "certificate_hash": "5BD281A150D6F0A919B8E40C6937AE0104B688B4"
+          }
+        },
+        {
+          "client_id": "800031691648-u2d7olk9vkm8cmvug00iakudr4uf462l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZlZaNQsoeWcwVnYfImRmyz4C4crsOxUs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
